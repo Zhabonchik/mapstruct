@@ -301,7 +301,7 @@ Sometimes mappings are not straightforward and some fields require custom logic.
 
 The example below demonstrates how the properties `length`, `width` and `height` in `FishTank` can be mapped to the `VolumeDto` bean, which is a member of `FishTankWithVolumeDto`. `VolumeDto` contains the properties `volume` and `description`. Custom logic is achieved by defining a method which takes `FishTank` instance as a parameter and returns a `VolumeDto`. MapStruct will take the entire parameter `source` and generate code to call the custom method `mapVolume` in order to map the `FishTank` object to the target property `volume`.
 
-The remainder of the fields could be mapped the regular way: using mappings defined defined by means of `@Mapping` annotations.
+The remainder of the fields could be mapped the regular way: using mappings defined by means of `@Mapping` annotations.
 
 .Manually implemented mapping method
 ====
